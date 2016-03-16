@@ -9,7 +9,6 @@
 #import <XCTest/XCTest.h>
 #import "Poddy_Example-Bridging-Header.h"
 #import "Poddy_Tests-Bridging-Header.h"
-#import <Poddy/Toddy.h>
 @import Poddy;
 
 @interface GoodbyeTests : XCTestCase
