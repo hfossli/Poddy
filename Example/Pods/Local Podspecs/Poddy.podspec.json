@@ -1,0 +1,30 @@
+{
+  "name": "Poddy",
+  "version": "0.1.0",
+  "summary": "A short description of Poddy.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/Poddy",
+  "license": "MIT",
+  "authors": {
+    "Håvard Fossli": "hfossli@gamil.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/Poddy.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "Poddy": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ]
+}

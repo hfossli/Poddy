@@ -1,0 +1,6 @@
+framework module Poddy {
+  umbrella header "Poddy-umbrella.h"
+
+  export *
+  module * { export * }
+}

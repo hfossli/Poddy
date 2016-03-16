@@ -1,0 +1,16 @@
+PODS:
+  - Poddy (0.1.0)
+
+DEPENDENCIES:
+  - Poddy (from `../`)
+
+EXTERNAL SOURCES:
+  Poddy:
+    :path: "../"
+
+CHECKOUT OPTIONS: 
+
+SPEC CHECKSUMS:
+  Poddy: dd80ed4aa5cd4b734a02df55b65de141f1b6e526
+
+COCOAPODS: 0.39.0

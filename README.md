@@ -22,7 +22,7 @@ pod "Poddy"
 
 ## Author
 
-Håvard Fossli, hfossli@gamil.com
+Håvard Fossli, hfossli@gmail.com
 
 ## License
 

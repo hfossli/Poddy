@@ -13,7 +13,8 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* HelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* HelloTests.swift */; };
+		A35603F21C995C7E00E996CF /* GoodbyeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A35603F11C995C7E00E996CF /* GoodbyeTests.m */; };
 		ACFE808E8DD3F91FB81C42F1 /* Pods_Poddy_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB1F41CB2958E540CB2AB44 /* Pods_Poddy_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,10 +42,16 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Poddy_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Poddy_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* HelloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloTests.swift; sourceTree = "<group>"; };
 		6FC9432A577B227E0CC0C568 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9A606FB6183F9F5594AECCAA /* Pods-Poddy_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poddy_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Poddy_Tests/Pods-Poddy_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A157672BFFA641414D0DA192 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A3064CF81C9958B40068A0A0 /* Poddy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Poddy.framework; path = "Pods/../build/Debug-iphoneos/Poddy.framework"; sourceTree = "<group>"; };
+		A3064CFA1C9959140068A0A0 /* Poddy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Poddy.framework; path = "Pods/../build/Debug-iphoneos/Poddy.framework"; sourceTree = "<group>"; };
+		A3064CFC1C99591E0068A0A0 /* Pods_Poddy_Tests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Poddy_Tests.framework; path = "Pods/../build/Debug-iphoneos/Pods_Poddy_Tests.framework"; sourceTree = "<group>"; };
+		A35603EC1C995B9B00E996CF /* Poddy_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Poddy_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		A35603F01C995C7E00E996CF /* Poddy_Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Poddy_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		A35603F11C995C7E00E996CF /* GoodbyeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodbyeTests.m; sourceTree = "<group>"; };
 		BAF73659D6D2254C5C027086 /* Pods-Poddy_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poddy_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Poddy_Tests/Pods-Poddy_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EAD6C2810356C84225069C1E /* Poddy.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Poddy.podspec; path = ../Poddy.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +79,9 @@
 		08159B523CB0DAF7C2FD3DC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3064CFC1C99591E0068A0A0 /* Pods_Poddy_Tests.framework */,
+				A3064CFA1C9959140068A0A0 /* Poddy.framework */,
+				A3064CF81C9958B40068A0A0 /* Poddy.framework */,
 				2BF2E1F6511334550DBC1D0C /* Pods_Poddy_Example.framework */,
 				1DB1F41CB2958E540CB2AB44 /* Pods_Poddy_Tests.framework */,
 			);
@@ -124,8 +134,11 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACEB1AFB9204008FA782 /* HelloTests.swift */,
+				A35603F11C995C7E00E996CF /* GoodbyeTests.m */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				A35603EC1C995B9B00E996CF /* Poddy_Example-Bridging-Header.h */,
+				A35603F01C995C7E00E996CF /* Poddy_Tests-Bridging-Header.h */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -368,7 +381,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* HelloTests.swift in Sources */,
+				A35603F21C995C7E00E996CF /* GoodbyeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,11 +503,18 @@
 			baseConfigurationReference = 13C5B7A4C804A5F0B0D2DE51 /* Pods-Poddy_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Poddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/Poddy_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -502,11 +523,17 @@
 			baseConfigurationReference = 57D5FBCD71C2CC0A9C8157CA /* Pods-Poddy_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Poddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/Poddy_Example-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -515,6 +542,7 @@
 			baseConfigurationReference = 9A606FB6183F9F5594AECCAA /* Pods-Poddy_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -527,6 +555,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/Poddy_Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Poddy_Example.app/Poddy_Example";
 			};
 			name = Debug;
@@ -536,6 +566,7 @@
 			baseConfigurationReference = BAF73659D6D2254C5C027086 /* Pods-Poddy_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -544,6 +575,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/Poddy_Tests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Poddy_Example.app/Poddy_Example";
 			};
 			name = Release;
